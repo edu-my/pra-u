@@ -73,6 +73,18 @@ nav {
   padding: 0 28px;
 }
 
+.nav-muet {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 14px;
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-80px);
+}
+.nav-muet:hover { color: #1a1a1a; }
+
 .nav-logo {
   font-family: 'Geist', sans-serif;
   font-size: 16px;
@@ -275,7 +287,46 @@ nav {
   to   { opacity: 0; transform: translateY(-55%); }
 }
 
-.hero-sub {
+.hero-action-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
+
+.hero-plain-links {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.hero-link {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-family: 'DM Sans', sans-serif;
+}
+.hero-link:hover { color: #1a1a1a; }
+
+.hero-link-sep { color: #ddd; font-size: 14px; }
+
+.hero-arrow {
+  width: 40px;
+  height: 24px;
+  flex-shrink: 0;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 2.5rem;
+}
   font-size: 16px;
   color: #666;
   max-width: 480px;
@@ -815,11 +866,7 @@ footer {
       </div>
       Pra U Gunsanad
     </a>
-    <ul class="nav-links">
-      <li><a href="#mengapa">Kelebihan</a></li>
-      <li><a href="#aliran">Aliran</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
+    <a href="https://muet-smkg.vercel.app/" target="_blank" class="nav-muet">MUET</a>
     <a href="tel:+6087XXXXXX" class="btn-nav">Hubungi Kami</a>
   </div>
 </nav>
@@ -855,6 +902,7 @@ footer {
     <p class="hero-sub">Program Pra-Universiti SMK Gunsanad menyediakan pelajar untuk STPM dan kemasukan ke universiti awam dengan bimbingan guru berpengalaman.</p>
 
     <div class="hero-buttons">
+      <a href="#mengapa" class="btn-ghost">Kelebihan</a>
       <a href="#aliran" class="btn-primary">Lihat Aliran ↗</a>
       <a href="#faq" class="btn-ghost">Soalan Lazim</a>
     </div>
@@ -901,6 +949,7 @@ footer {
     <span>Keningau, Sabah</span>
   </div>
 </div>
+
 
 <!-- WHY PRA U -->
 <section id="mengapa">
